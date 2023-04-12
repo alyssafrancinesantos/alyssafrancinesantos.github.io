@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Gilmer Light';
+    src: url(fonts/Gilmer-Light.otf);
+}
+
+@font-face {
+    font-family: 'Gilmer Medium';
+    src: url(fonts/Gilmer-Medium.otf);
+}
+
+@font-face {
+    font-family: 'Gilmer Bold';
+    src: url(fonts/Gilmer-Bold.otf);
+    font-weight: bold;
+}
+
+.nav-tabs .nav-link.active.brown-bg, #mainSideNav li button.brown-bg 
+{
+    background-color: #120000 !important;
+}
+
+.green-bg {
+    background-color: #A7B1A9 !important;
+}
+
+.light-brown-bg {
+    background-color: #b0a79f !important;
+}
+
+.text-white {
+    color: #FFF !important;
+}
+
+.text-brown {
+    color: #120000;
+}
+
+.text-light-brown {
+    color: #897A79;
+}
+
+.border-circle {
+    border: 2px solid #120000 !important;
+    border-radius: 50% !important;
+}
+
+section.home-main {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.side-nav {
+    flex-basis: auto;
+}
+
+#mainSideNav {
+    flex-direction: column;
+    border-right: 2px solid #888C8B;
+    flex-wrap: nowrap;
+}
+
+#mainSideNav li.nav-item {
+    border-bottom: 1px solid #888C8B;
+    display: flex;
+    flex-grow: 1;
+}
+
+#mainSideNav p, #mainSideNav span {
+    font-family: 'Gilmer Bold';
+}
+
+#mainSideNav li button > p, 
+#mainSideNav li button > span {
+    writing-mode: vertical-rl !important;
+    text-orientation: sideways !important;
+    transform: rotate(180deg);
+    margin: 0 auto;
+    color: #120000;
+}
+
+#mainSideNav li button > p {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+#mainSideNav li button > span {
+    writing-mode: horizontal-tb !important;
+    padding: 2px 6px;
+    margin-top: 10px;
+}
+
+#mainSideNav li button {
+    height: 100%;
+    background-color: #A7B1A9;
+    border-radius: unset;
+    flex-grow: 1;
+}
+
+.tab-content {
+    flex-grow: 1;
+}
+
+.tab-content .tab-pane.active {
+    background-color: #F5ECE3 !important;
+}
+
+#mainSideNav .nav-item:first-child button > p,
+#mainSideNav .nav-item:last-child button > p
+{
+    margin-bottom: unset ;
+}
+
+.nav-tabs .nav-link {
+    background-color: #A7B1A9;
+    border: unset;
+    border-bottom: 1px solid #888C8B !important;
+}
+
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active {
+    background-color: #F5ECE3 !important;
+    border: unset;
+    border-bottom: 1px solid #888C8B !important;
+}
+
+#main {
+    padding: 50px 0 50px 50px;
+}
+
+#main a {
+    font-family: "Gilmer Light";
+    text-decoration: unset;
+}
+
+#main p {
+    margin-bottom: unset;
+}
+
+#main p:first-child {
+    font-family: "Gilmer Bold";
+}
+
+#main p:not(:nth-child(1)) {
+    font-family: "Gilmer Medium";
+}
+
+#main .socials {
+    margin-bottom: 100px;
+}
+
+#main .main-content_images {
+    max-height: 80px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#main .main-content_images img:first-child {
+    padding-right: 10px;
+}
+
+#main .main-content_images img:last-child {
+    max-width: 80px;
+}
+
+#main .main-content_images + p {
+    padding-left: 10px;
+    margin-bottom: 100px;
+}
+
+#main img.main-image {
+    border-radius: 40px 0 0 40px;
+}
+
+#main .main-copy > * {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+}
+
+#main .main-copy h1, #main .main-copy sup {
+    font-family: "Gilmer Bold";
+}
+
+#main .main-copy h1 {
+    font-size: 120px;
+    margin-right: 10px;
+}
+
+#main .main-copy sup {
+    font-size: 50px;
+    right: 1em;
+    top: 0;
+}
