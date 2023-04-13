@@ -416,6 +416,9 @@ section.home-main {
 
 #about .container-fluid {
     padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 #about .container-fluid:first-of-type img {
