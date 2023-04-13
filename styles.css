@@ -14,6 +14,12 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: 'Gilmer Heavy';
+    src: url(fonts/Gilmer-Heavy.otf);
+    font-weight: 900;
+}
+
 h2 {
     font-family: "Gilmer Bold";
     font-size: 190px !important;
@@ -171,7 +177,7 @@ section.home-main {
 }
 
 #main .socials {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 #main .main-content_images {
@@ -195,6 +201,8 @@ section.home-main {
 
 #main img.main-image {
     border-radius: 40px 0 0 40px;
+    height: 100%;
+    object-fit: cover;
 }
 
 #main .main-copy > * {
@@ -203,14 +211,19 @@ section.home-main {
     transform: rotate(180deg);
 }
 
+#main .main-copy p {
+    font-family: 'Gilmer Bold';
+}
+
 #main .main-copy h1, #main .main-copy sup {
     font-family: "Gilmer Bold";
 }
 
 #main .main-copy h1 {
-    font-size: 140px;
-    line-height: 140px;
+    font-size: 240px;
+    line-height: 240px;
     margin-right: 10px;
+    margin-block-end: unset;
 }
 
 #main .main-copy sup {
