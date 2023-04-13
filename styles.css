@@ -220,6 +220,7 @@ section.home-main {
 }
 
 #main .main-copy h1 {
+    font-family: 'Gilmer Heavy' !important;
     font-size: 240px;
     line-height: 240px;
     margin-right: 10px;
