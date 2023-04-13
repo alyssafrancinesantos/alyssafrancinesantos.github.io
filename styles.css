@@ -14,6 +14,12 @@
     font-weight: bold;
 }
 
+h2 {
+    font-family: "Gilmer Bold";
+    font-size: 190px !important;
+    line-height: 150px !important;
+}
+
 .nav-tabs .nav-link.active.brown-bg, #mainSideNav li button.brown-bg 
 {
     background-color: #120000 !important;
@@ -23,8 +29,16 @@
     background-color: #A7B1A9 !important;
 }
 
+.brown-bg {
+    background-color: #120000;
+}
+
 .light-brown-bg {
     background-color: #b0a79f !important;
+}
+
+.off-white-bg {
+    background-color: #F5ECE3;
 }
 
 .text-white {
@@ -44,6 +58,11 @@
     border-radius: 50% !important;
 }
 
+.copy_bullets ul {
+    font-family: "Gilmer Medium";
+    list-style: none;
+}
+
 section.home-main {
     display: flex;
     position: relative;
@@ -53,6 +72,9 @@ section.home-main {
 
 .side-nav {
     flex-basis: auto;
+    z-index: 100;
+    position: fixed;
+    height: 100%;
 }
 
 #mainSideNav {
@@ -100,11 +122,12 @@ section.home-main {
 
 .tab-content {
     flex-grow: 1;
+    margin-left: 72px;
 }
 
-.tab-content .tab-pane.active {
+/* .tab-content .tab-pane.active {
     background-color: #F5ECE3 !important;
-}
+} */
 
 #mainSideNav .nav-item:first-child button > p,
 #mainSideNav .nav-item:last-child button > p
@@ -127,6 +150,7 @@ section.home-main {
 
 #main {
     padding: 50px 0 50px 50px;
+    background-color: #F5ECE3;
 }
 
 #main a {
@@ -166,7 +190,7 @@ section.home-main {
 
 #main .main-content_images + p {
     padding-left: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 #main img.main-image {
@@ -184,7 +208,8 @@ section.home-main {
 }
 
 #main .main-copy h1 {
-    font-size: 120px;
+    font-size: 140px;
+    line-height: 140px;
     margin-right: 10px;
 }
 
@@ -192,4 +217,239 @@ section.home-main {
     font-size: 50px;
     right: 1em;
     top: 0;
+}
+
+#digi-art {
+    padding: 50px;
+    background-color: #A7B1A9;
+    min-height: 100vh;
+}
+
+#digi-art sup, 
+#traditional sup,
+#graphic-design sup,
+#video-edit sup,
+#about sup
+{
+    top: 0.5em;
+    margin-left: 5px;
+}
+
+#digi-art h2 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color: #000;
+    text-align: end;
+}
+
+#digi-art p, 
+#traditional p,
+#graphic-design p,
+#video-edit p
+{
+    font-family: "Gilmer Bold";
+}
+
+#digi-art .digi-front {
+    background-color: #A7B1A9;
+}
+
+#digi-art .digi-art__copy
+{
+    margin-bottom: 100px;
+}
+
+.tm {
+    margin-bottom: 100px;
+}
+
+.copy-img-featured {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.copy_bullets {
+    max-width: 40%;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.copy_bullets ul {
+    margin-bottom: 30px;
+}
+
+.copy_bullets ul:first-child {
+    padding-left: unset;
+}
+
+.copy_bullets ul li {
+    font-size: 20px;
+}
+
+.content-images img, .content-videos iframe {
+    box-shadow: 0px 5px 6px -1px rgba(0,0,0,0.76);
+}
+
+.content-images img:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.content-images img:hover {
+    cursor: pointer;
+}
+
+#traditional {
+    background-color: #120000;
+    min-height: 100vh;
+}
+
+#traditional h2 {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    line-height: 190px !important;
+}
+
+#traditional .tm > * {
+    color: #b6a09e;
+}
+
+#traditional .traditional__copy {
+    padding: 50px;
+}
+
+#traditional .traditional__images {
+    gap: 20px;
+    background-image: url(img/img-jpg-traditional-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: #F5ECE3;
+    padding: 50px 0px;
+}
+
+#traditional .traditional__images img {
+    width: 40%;
+    object-fit: cover;
+}
+
+#graphic-design {
+    background-color: #F5ECE3;
+}
+
+#graphic-design h2 {
+    margin-top: 100px;
+    color: #000;
+}
+
+#graphic-design h2.mr-custom {
+    margin-right: 10%;
+}
+
+#graphic-design h2:last-child {
+    margin-top: unset;
+    margin-bottom: 20px;
+}
+
+#graphic-design .graphic-design__images.flex-wrap img {
+    width: 48%;
+    object-fit: cover;
+}
+
+#graphic-design img:not(:last-child) {
+    margin-bottom: unset;
+}
+
+#graphic-design .graphic-design__copy {
+    padding: 50px 50px 0 50px;
+    margin-bottom: 100px;
+}
+
+#graphic-design .graphic-design__images {
+    padding: 40px 50px;
+}
+
+#video-edit .mr-custom {
+    margin-right: 30%;
+}
+
+#video-edit .video-edit__copy {
+    padding: 50px;
+}
+
+#video-edit .video-edit__copy > * {
+    color: #000;
+}
+
+#video-edit .video-edit__copy h2:first-of-type {
+    margin-top: 100px;
+}
+
+#video-edit .content-videos {
+    padding: 50px;
+    gap: 40px;
+}
+
+#video-edit .content-videos iframe {
+    border-radius: 20px;
+}
+
+#video-edit .content-videos  iframe.mr-custom {
+    margin-right: 10%;
+}
+
+#video-edit .content-videos  iframe.ml-custom {
+    margin-left: 10%;
+}
+
+#about .container-fluid {
+    padding: 100px;
+}
+
+#about .container-fluid:first-of-type img {
+    width: 80%;
+    border-radius: 30px;
+}
+
+#about .about-header {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+#about .about-header h2 {
+    font-size: 100px !important;
+    line-height: 90px !important;
+    color: #000;
+    margin-bottom: unset;
+}
+
+#about .about-header h2.ml-custom-1 {
+    margin-left: 21%
+}
+
+#about .about-header h2.ml-custom-2 {
+    margin-left: 30%;
+}
+
+#about .about-copy {
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+#about .about-copy > p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #897A79;
+    font-size: 20px;
+}
+
+#about .about-motto > h3 {
+    font-family: "Gilmer Bold";
+    font-size: 35px;
+}
+
+#about .about-motto h3.mr-custom {
+    margin-right: 80px;
+}
+
+#about .tm {
+    margin-bottom: 20px;
 }
