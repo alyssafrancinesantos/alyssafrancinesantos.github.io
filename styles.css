@@ -453,3 +453,24 @@ section.home-main {
 #about .tm {
     margin-bottom: 20px;
 }
+
+#about .tm p {
+    padding-left: 50px;
+}
+
+#about .white-line {
+    top: 10px;
+    left: 0;
+}
+
+#about hr {
+    opacity: 1;
+    border-top: 1px solid #FFF;
+    width: 30px;
+    margin-top: unset;
+    margin-bottom: 80px;
+}
+
+#about .white-line hr:nth-child(2) {
+    width: 15px;
+}
