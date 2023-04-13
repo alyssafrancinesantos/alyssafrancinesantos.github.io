@@ -177,7 +177,7 @@ section.home-main {
 }
 
 #main .socials {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #main .main-content_images {
@@ -213,6 +213,7 @@ section.home-main {
 
 #main .main-copy p {
     font-family: 'Gilmer Bold';
+    font-size: 20px;
 }
 
 #main .main-copy h1, #main .main-copy sup {
@@ -433,6 +434,7 @@ section.home-main {
 }
 
 #about .about-header h2 {
+    font-family: "Gilmer Heavy" !important;
     font-size: 100px !important;
     line-height: 90px !important;
     color: #000;
