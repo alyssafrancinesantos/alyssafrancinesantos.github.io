@@ -59,6 +59,32 @@ h2 {
     color: #897A79;
 }
 
+.btn-ig {
+    height: 28px;
+    font-family:'Helvetica Neue',Arial,sans-serif !important;
+    font-size: 13px;
+    color: #FFF;
+    border-radius: 9999px;
+    padding: 7px 12px 6px 12px;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background-size: 200% 200%;
+    transition: background-position 0.4s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    /* box-shadow: 0 4px 12px rgba(193, 53, 132, 0.3); */
+}
+
+.btn-crd {
+    padding: 4px 12px 3px 12px;
+    background-color: #120000;
+    color: #FFF;
+    font-size: 13px;
+    border-radius: 9999px;
+}
+
+.btn-ig i, .btn-crd i {
+    font-size: 18px !important;
+    transform: translateY(1px);
+}
+
 .border-circle {
     border: 2px solid #120000 !important;
     border-radius: 50% !important;
