@@ -528,4 +528,5 @@ section.home-main {
     height: 700px;
     object-fit: contain;
     min-width: 600px;
+    box-shadow: unset !important;
 }
