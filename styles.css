@@ -450,7 +450,7 @@ section.home-main {
 }
 
 #about .container-fluid:first-of-type img {
-    width: 80%;
+    width: 82%;
     border-radius: 30px;
 }
 
@@ -518,4 +518,14 @@ section.home-main {
 
 #about .white-line hr:nth-child(2) {
     width: 15px;
+}
+
+#digi-art .content-images.brown-bg {
+    gap: 50px;
+}
+
+#digi-art .content-images.brown-bg img {
+    height: 700px;
+    object-fit: contain;
+    min-width: 600px;
 }
