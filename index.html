@@ -61,14 +61,72 @@
                 </li>
             </ul>
         </div>
-        
+
+        <!-- ========================================== -->
+        <!-- FLOATING TOP-LEFT TOGGLER (Visible on lg & down) -->
+        <!-- ========================================== -->
+        <nav class="navbar navbar-dark bg-transparent position-fixed top-0 end-0 p-3 z-3 d-lg-none">
+            <button class="navbar-toggler bg-dark border-0 shadow-sm px-2 py-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSideNav" aria-controls="mobileSideNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="width: 1.2rem; height: 1.2rem;"></span>
+            </button>
+        </nav>
+
+        <!-- ========================================== -->
+        <!-- OFFCANVAS SIDEBAR (Stays the same) -->
+        <!-- ========================================== -->
+        <div class="offcanvas offcanvas-start bg-dark text-white d-lg-none" tabindex="-1" id="mobileSideNav" aria-labelledby="mobileSideNavLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileSideNavLabel">2026 MULTIMEDIA PORTFOLIO</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <ul class="nav nav-tabs flex-column h-100" id="mainSideNavMobile" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active text-white text-start brown-bg w-100 rounded-0" id="main-tab-m" data-bs-toggle="tab" data-bs-target="#main" type="button" role="tab" aria-controls="main" aria-selected="true">
+                            <p class="text-white mb-0">HOME</p>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-white text-start w-100 rounded-0 d-flex justify-content-between align-items-center" id="video-edit-tab-m" data-bs-toggle="tab" data-bs-target="#video-edit" type="button" role="tab" aria-controls="video-edit" aria-selected="false">
+                            <span>VIDEO EDITING</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-white text-start w-100 rounded-0 d-flex justify-content-between align-items-center" id="digi-art-tab-m" data-bs-toggle="tab" data-bs-target="#digi-art" type="button" role="tab" aria-controls="digi-art" aria-selected="false">
+                            <span>DIGITAL ART</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-white text-start w-100 rounded-0 d-flex justify-content-between align-items-center" id="traditional-tab-m" data-bs-toggle="tab" data-bs-target="#traditional" type="button" role="tab" aria-controls="traditional" aria-selected="false">
+                            <span>TRADITIONAL</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-white text-start w-100 rounded-0 d-flex justify-content-between align-items-center" id="graphic-design-tab-m" data-bs-toggle="tab" data-bs-target="#graphic-design" type="button" role="tab" aria-controls="graphic-design" aria-selected="false">
+                            <span>GRAPHIC DESIGN</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-white text-start w-100 rounded-0 d-flex justify-content-between align-items-center" id="about-tab-m" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false">
+                            <span>ABOUT</span>
+                        </button>
+                    </li>
+                    <li class="nav-item mt-auto" role="presentation">
+                        <div class="light-brown-bg p-3">
+                            <p class="text-brown text-start mb-0">ALYSSA FRANCINE V.<br> SANTOS</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
       <!-- Tab panes -->
       <div class="tab-content">
         <div class="tab-pane active" id="main" role="tabpanel" aria-labelledby="main-tab">
             
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-12">
                         <div class="socials">
                             <a href="https://x.com/takodotgif?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @takodotgif</a><script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
                             <br>
@@ -101,7 +159,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8 pe-0">
+                    <div class="col-lg-8 col-md-12 pe-0">
                         <img src="img/img-jpg-main-featured.jpg" alt="" class="img-fluid main-image">
                     </div>
                 </div>
@@ -279,7 +337,7 @@
                                 <p>In this project, I was able to utilize time management and extreme collaboration as well as communication with my team.</p>
                             </div>
                         </div>
-                        <div class="vid-row d-flex flex-wrap justify-content-center">
+                        <div class="vid-row d-flex flex-wrap justify-content-center row-reverse">
                             <div class="vid-text-box d-flex flex-column justify-content-center">
                                 <p>One of the difficulties I faced with this coursework was that I lacked ideas on what I wanted to express in my craft as the prompt was “borrow from what exists”.</p>
                                 <p>I had to brainstorm as well as organize thoughts and ideas with the help of a mind map that resulted to (hopefully) a meaningful piece.</p>
@@ -297,7 +355,7 @@
                                 <p>During this time, I really had to focus and practice organizing my files within the project and timeline to make the workflow easier and faster. To make up for the slow render times, I also had to work with lower resolutions on certain clips to try and make it easier to work on.</p>
                             </div>
                         </div>
-                        <div class="vid-row d-flex flex-wrap justify-content-center">
+                        <div class="vid-row d-flex flex-wrap justify-content-center row-reverse">
                             <div class="vid-text-box d-flex flex-column justify-content-center text-white">
                                 <p>Similar with the challenge above, this was mostly a hardware challenge. Motion graphics takes a toll on computers and the amount of lines I had to animate was making everything a bit slow and frustrating to finish on time.</p>
                                 <p>I had to work on lower resolutions and as well as manage my time effectively by sacrificing a bit of rest to push out the introduction video on time for the deadline while still delivering pleasant results.</p>
@@ -313,7 +371,7 @@
                         </div>
                     </div>
                     <div class="video-edit__videos content-videos d-flex align-items-center flex-column off-white-bg">
-                        <div class="vid-row d-flex flex-wrap justify-content-center">
+                        <div class="vid-row d-flex flex-wrap justify-content-center row-reverse">
                             <div class="vid-text-box d-flex flex-column justify-content-center ">
                                 <p>This one is a personal project and was the starting point of wherein I took video editing much more seriously with the VFX and motion graphics.</p>
                                 <p>It served as a practice and so many challenges came in such as familiarizing myself with various video editing terms, gathering vfx materials, keyframing, and many more.</p>
@@ -328,7 +386,7 @@
                                 <p>To make up for the lack of lyrics and characters that I can play around with, I used more graphics to fill in the gaps and played with visual effects to make it seem more interesting while also connecting the message of the song to the narrative of the animated movie featured in the project.</p>
                             </div>
                        </div>
-                       <div class="vid-row d-flex flex-wrap justify-content-center">
+                       <div class="vid-row d-flex flex-wrap justify-content-center row-reverse">
                             <div class="vid-text-box d-flex flex-column justify-content-center ">
                                 <p>This is a proof of concept for our proposed capstone project, “Sungka Go!”. One of the difficulties faced in this was making the “gameplay” look realistic and that as if it was a legitimate game.</p>
                                 <p>It took a lot of collaboration on the assets and PNGs while I also had to use my skills in Figma to prototype the whole thing before I was able to import everything into Premiere Pro to create the whole trailer.</p>
@@ -344,10 +402,10 @@
             
             <div class="container-fluid off-white-bg">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-12">
                         <img src="img/img-jpg-about-2.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 col-md-12">
                         <div class="about-header d-flex flex-column">
                             <h2>ABOUT</h2>
                             <h2 class="ml-custom-1">THE</h2>
