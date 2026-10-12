@@ -442,6 +442,20 @@ section.home-main {
     margin-left: 10%;
 }
 
+#video-edit .vid-text-box {
+    flex-basis: 40%;
+}
+
+#video-edit .vid-text-box p {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+#video-edit .vid-row {
+    gap: 70px;
+}
+
 #about .container-fluid {
     padding: 100px;
     min-height: 100vh;
