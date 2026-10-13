@@ -183,6 +183,7 @@ section.home-main {
 #main {
     padding: 50px 0 50px 50px;
     background-color: #F5ECE3;
+    min-height: 100vh;
 }
 
 #main a {
@@ -621,6 +622,9 @@ section.home-main {
     }
     .offcanvas-body {
         background-color: #120000;
+    }
+    #main {
+        min-height: unset;
     }
     h2,
     #traditional h2 {
