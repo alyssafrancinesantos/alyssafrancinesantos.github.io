@@ -798,3 +798,9 @@ section.home-main {
         margin-bottom: unset;
     }
 }
+
+@media (max-height: 715px) {
+    .mobile-nav-img {
+        max-height: 200px;
+    }
+}
