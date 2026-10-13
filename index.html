@@ -63,7 +63,7 @@
         </div>
 
         <!-- ========================================== -->
-        <!-- FLOATING TOP-LEFT TOGGLER (Visible on lg & down) -->
+        <!-- FLOATING TOGGLER -->
         <!-- ========================================== -->
         <nav class="navbar navbar-dark bg-transparent position-fixed top-0 end-0 p-3 z-3 d-lg-none">
             <button class="navbar-toggler bg-dark border-0 shadow-sm px-2 py-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSideNav" aria-controls="mobileSideNav" aria-label="Toggle navigation">
@@ -72,7 +72,7 @@
         </nav>
 
         <!-- ========================================== -->
-        <!-- OFFCANVAS SIDEBAR (Stays the same) -->
+        <!-- OFFCANVAS SIDEBAR -->
         <!-- ========================================== -->
         <div class="offcanvas offcanvas-start bg-dark text-white d-lg-none" tabindex="-1" id="mobileSideNav" aria-labelledby="mobileSideNavLabel">
             <div class="offcanvas-header">
@@ -82,8 +82,8 @@
             <div class="offcanvas-body p-0">
                 <ul class="nav nav-tabs flex-column h-100" id="mainSideNavMobile" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active text-white text-start brown-bg w-100 rounded-0" id="main-tab-m" data-bs-toggle="tab" data-bs-target="#main" type="button" role="tab" aria-controls="main" aria-selected="true">
-                            <p class="text-white mb-0">HOME</p>
+                        <button class="nav-link active text-white text-start w-100 rounded-0" id="main-tab-m" data-bs-toggle="tab" data-bs-target="#main" type="button" role="tab" aria-controls="main" aria-selected="true">
+                            <span>HOME</span>
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
@@ -111,9 +111,12 @@
                             <span>ABOUT</span>
                         </button>
                     </li>
+                    <li class="nav-item nav-img" role="">
+                        <img src="img/img-png-about-tag.png" alt="" class="img-fluid mobile-nav-img">
+                    </li>
                     <li class="nav-item mt-auto" role="presentation">
                         <div class="light-brown-bg p-3">
-                            <p class="text-brown text-start mb-0">ALYSSA FRANCINE V.<br> SANTOS</p>
+                            <p class="text-brown text-start mb-0 nav-name">ALYSSA FRANCINE V. SANTOS</p>
                         </div>
                     </li>
                 </ul>
@@ -464,6 +467,11 @@
                 $("#mainSideNav li button").click(function() {
                     $(window).scrollTop(0);
                     console.log("scroll")
+                });
+                $("#mainSideNavMobile li button").click(function() {
+                    $(window).scrollTop(0);
+                    console.log("scroll mobile");
+                    $(".btn-close.btn-close-white[data-bs-dismiss='offcanvas']").trigger("click");
                 });
             });
     </script>

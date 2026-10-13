@@ -545,6 +545,27 @@ section.home-main {
     box-shadow: unset !important;
 }
 
+#mobileSideNav span,
+.nav-name {
+    font-family: 'Gilmer Bold';
+}
+
+#mobileSideNav .nav-link {
+    padding: 12px 16px;
+}
+
+.mobile-nav-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.nav-img {
+    flex-grow: 100;
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 1600px) and (min-width: 1200px) {
     #main img.main-image {
         max-width: 90%;
@@ -594,6 +615,12 @@ section.home-main {
     }
     .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
         color: #120000 !important;
+    }
+    .offcanvas-header {
+        background-color: #A7B1A9;
+    }
+    .offcanvas-body {
+        background-color: #120000;
     }
     h2,
     #traditional h2 {
@@ -671,6 +698,17 @@ section.home-main {
     #graphic-design .graphic-design__images.flex-wrap img:first-child {
         margin-bottom: 40px;
     }
+    .content-images img {
+        width: 100%;
+    }
+    #digi-art .content-images.brown-bg img {
+        max-height: 500px;
+        min-width: unset;
+    }
+    .content-images img:not(:last-child),
+    #digi-art .content-images.brown-bg img {
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -696,8 +734,63 @@ section.home-main {
     #main .main-copy p {
         font-size: 14px;
     }
-    h2, #traditional h2, #graphic-design h2 {
+    h2 {
         font-size: 80px !important;
         line-height: 80px !important;
+    }
+    #traditional h2, #graphic-design h2 {
+        font-size: 40px !important;
+        line-height: 40px !important;
+    }
+    #video-edit iframe {
+        width: 100%;
+        height: 250px;
+    }
+    #video-edit .content-videos,
+    #graphic-design .graphic-design__images {
+        padding: 50px 20px;
+    }
+    #video-edit .vid-row {
+        gap: 40px;
+    }
+    #digi-art {
+        padding: 50px 20px;
+        min-height: unset;
+    }
+    #digi-art .content-images.brown-bg {
+        background-color: unset;
+        padding-top: unset !important;
+        gap: unset;
+    }
+    #digi-art .content-images.brown-bg img {
+        box-shadow: 0px 5px 6px -1px rgba(0,0,0,0.76) !important;
+        width: 100%;
+        object-fit: cover;
+    }
+    .copy_bullets ul li {
+        font-size: 16px;
+    }
+    #traditional .traditional__images {
+        padding: 50px 20px;
+    }
+    #about .container-fluid {
+        padding: 50px 30px;
+        min-height: unset;
+    }
+    #about .about-header h2 {
+        font-size: 50px !important;
+        line-height: 50px !important;
+    }
+    #about .about-header {
+        margin-bottom: 30px;
+    }
+    #about .about-copy {
+        width: 100%;
+    }
+    #about .about-motto h3.mr-custom {
+        margin-right: unset;
+    }
+    #about .about-motto > h3 {
+        margin-bottom: unset;
     }
 }
